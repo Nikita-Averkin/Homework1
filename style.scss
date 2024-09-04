@@ -1,0 +1,285 @@
+$color-text: rgb(32, 32, 39);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background-image: url(img/top-bcc.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-info {
+        width: 769px;
+    }
+
+    &-title {
+        color: $color-text;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 196px;
+        padding-bottom: 24px;
+    }
+
+    &-text {
+        color: $color-text;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    &-btn {
+        width: 247px;
+        height: 66px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding: 16px 28px 16px 28px;
+    }
+
+    &-btn:hover {
+        background-color: #fff;
+        color: $color-text;
+        cursor: pointer;
+    }
+
+    &-star__1 {
+        position: absolute;
+        left: 10%;
+        top: 8%;
+    }
+    &-star__2 {
+        position: absolute;
+        left: 4%;
+        top: 12%;
+    }
+    &-star__3 {
+        position: absolute;
+        left: 67%;
+        top: 66%;
+    }
+    &-star__4 {
+        position: absolute;
+        left: 70%;
+        top: 71%;
+    }
+    &-star__big {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        translate: (49% -35%);
+        
+    }
+    &-tringle {
+        position: absolute;
+        left: 87%;
+        top: 58.5%;
+    }
+    &-arrow__1 {
+        position: absolute;
+        z-index: 1;
+        left: 59%;
+        top: -5%;
+    }
+    &-arrow__2 {
+        position: absolute;
+        left: 74%;
+        top: 27%;
+    }
+    &-arrow__3 {
+        position: absolute;
+        left: 85%;
+        top: 47%;
+    }
+    &-arrow__4 {
+        position: absolute;
+        left: 94.5%;
+        top: 80%;
+    }
+    &-animation {
+        position: absolute;
+        height: 90px;
+        top: 710px;
+        width: 100%;
+        overflow: hidden;
+        background: rgb(188, 236, 48);
+        &__line {
+            padding: 27px 49px 27px 49px;
+            display: flex;
+            white-space: nowrap;
+            gap: 51px;
+            backdrop-filter: blur(50px);
+            
+        }
+        &__line {
+            animation: run 6s linear infinite;
+        }
+        @keyframes run {
+            from {
+               transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-1683.35px);
+             }
+          }
+    }
+    &-animation__text {
+        color: $color-text;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+}
+
+.about {
+    position: relative;
+    overflow: hidden;
+    background: rgb(32, 32, 39);
+    
+    &-heading {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 64px;
+    }
+    &-text {
+        width: 788px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+    }
+
+    &__container {
+        padding-top: 72px;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item {
+        grid-column: span 4;
+        width: 378px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &-img {
+            width: 100%;
+            border-radius: 30px;
+        }  
+
+        &-info {
+            max-width: 314px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 32px 32px 32px 36px;
+            border-radius: 30px;
+        }
+
+        &-heading {
+            width: 108px;
+            border-radius: 52.58px;
+            background: rgb(247, 247, 247);
+            padding: 8px 16px 10px 16px;
+            color: $color-text;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-text {
+            color: $color-text;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+    }
+
+
+    &__star-left-1 {
+        position: absolute;
+        left: calc(50% - 695px);
+        top: 770px;
+        transform: rotate(5.45deg);
+        }
+    &__star-left-2 {
+            position: absolute;
+            left: calc(50% - 680px);
+            top: 822px;
+            transform: rotate(5.45deg);
+            }
+    &__star-right {
+            position: absolute;
+            z-index: 1;
+            right: calc(50% - 863px);
+            top: 77px;
+            transform: rotate(-6.77deg);
+            }
+
+
+    }
+
+
+
