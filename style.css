@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
 }
 
 a {
@@ -20,16 +22,15 @@ a {
   position: relative;
   overflow: hidden;
   height: 800px;
-  background-image: url(img/top-bcc.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat -15% 100%;
+  background-size: 130%;
 }
 .top-info {
   width: 769px;
 }
 .top-title {
   color: rgb(32, 32, 39);
+  max-width: 769px;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -40,6 +41,7 @@ a {
 }
 .top-text {
   color: rgb(32, 32, 39);
+  max-width: 769px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -164,7 +166,8 @@ a {
 .about {
   position: relative;
   overflow: hidden;
-  background: rgb(32, 32, 39);
+  background: rgb(32, 32, 39) url(img/about/Сочетание\ 1.png) no-repeat;
+  background-size: cover;
 }
 .about-heading {
   color: rgb(255, 255, 255);
