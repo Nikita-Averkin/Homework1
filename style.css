@@ -21,8 +21,7 @@ a {
   position: relative;
   overflow: hidden;
   height: 800px;
-  background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat -15% 100%;
-  background-size: 130%;
+  background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat calc(100% + 488px) calc(0% - 334px);
 }
 .top-info {
   width: 769px;
@@ -195,8 +194,13 @@ a {
   }
   .top {
     height: 700px;
-    background: rgb(225, 255, 143) url(img/mobile/top-bck-mob.svg) no-repeat -25% 210%;
-    background-size: 125%;
+    background: rgb(225, 255, 143) url(img/mobile/top-bck-mob.svg) no-repeat calc(100% + 125px) calc(0% - 110px);
+  }
+  .top-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .top-title {
     width: 262px;
@@ -230,11 +234,13 @@ a {
   .top-animation {
     height: 52px;
     top: 650px;
+    display: flex;
   }
   .top-animation__line {
     padding: 16px 24px 16px 24px;
     display: flex;
     white-space: nowrap;
+    align-items: center;
     gap: 28px;
   }
   .top-animation__text {

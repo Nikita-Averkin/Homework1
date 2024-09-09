@@ -22,8 +22,7 @@ a {
     position: relative;
     overflow: hidden;
     height: 800px;
-    background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat -15% 100%;
-    background-size: 130%;
+    background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat calc(100% + 488px) calc(0% - 334px);
 
     &-info {
         width: 769px;
