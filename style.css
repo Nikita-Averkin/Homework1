@@ -115,12 +115,6 @@ a {
   background-size: cover;
 }
 .about-heading {
-  color: rgb(255, 255, 255);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 78px;
-  letter-spacing: 0px;
-  text-align: left;
   padding-top: 64px;
 }
 .about-text {
@@ -135,6 +129,7 @@ a {
 }
 .about__container {
   padding-top: 72px;
+  padding-bottom: 50px;
   width: 1200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -185,6 +180,100 @@ a {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.section-heading {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.game {
+  position: relative;
+  overflow: hidden;
+  background: rgb(32, 32, 39) url(img/game/game-stars.svg) no-repeat;
+  background-position-x: calc(0% + 1250px);
+  background-position-y: calc(0% + 93px);
+}
+.game-heading {
+  padding-top: 46px;
+  padding-bottom: 72px;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 144px;
+}
+.game__item {
+  width: 1200px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+.game__item_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.game__item-info {
+  padding: 48px;
+  width: 504px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.game__item-heading {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 48px;
+}
+.game__item-text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 36px;
+  width: 457px;
+}
+.game__item-btn {
+  width: 247px;
+  height: 66px;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+}
+.footer-text {
+  padding-top: 60px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
