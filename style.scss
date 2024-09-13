@@ -1,0 +1,318 @@
+$color-text: rgb(32, 32, 39);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.top {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background: rgb(225, 255, 143) url(img/фрейм\ 3.svg) no-repeat calc(100% + 488px) calc(0% - 334px);
+
+    &-info {
+        width: 769px;
+    }
+
+    &-title {
+        color: $color-text;
+        max-width: 769px;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 196px;
+        padding-bottom: 24px;
+    }
+
+    &-text {
+        color: $color-text;
+        max-width: 769px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    &-btn {
+        width: 247px;
+        height: 66px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding: 16px 28px 16px 28px;
+    }
+
+    &-btn:hover {
+        background-color: #fff;
+        color: $color-text;
+        cursor: pointer;
+    }
+
+    &-animation {
+        position: absolute;
+        height: 90px;
+        top: 710px;
+        width: 100%;
+        overflow: hidden;
+        background: rgb(188, 236, 48);
+        &__line {
+            padding: 27px 49px 27px 49px;
+            display: flex;
+            white-space: nowrap;
+            gap: 51px;
+            backdrop-filter: blur(50px);
+            
+        }
+        &__line {
+            animation: run 6s linear infinite;
+        }
+        @keyframes run {
+            from {
+               transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-1683.35px);
+             }
+          }
+    }
+    &-animation__text {
+        color: $color-text;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+}
+
+.about {
+    position: relative;
+    overflow: hidden;
+    background: rgb(32, 32, 39) url(img/about/Сочетание\ 1.png) no-repeat;
+    background-size: cover;
+    
+    &-heading {
+        padding-top: 64px;
+    }
+    &-text {
+        width: 788px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+    }
+
+    &__container {
+        padding-top: 72px;
+        padding-bottom: 50px;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__item {
+        grid-column: span 4;
+        width: 378px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &-img {
+            width: 100%;
+            border-radius: 30px;
+        }  
+
+        &-info {
+            max-width: 314px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 32px 32px 32px 36px;
+            border-radius: 30px;
+        }
+
+        &-heading {
+            width: 108px;
+            border-radius: 52.58px;
+            background: rgb(247, 247, 247);
+            padding: 8px 16px 10px 16px;
+            color: $color-text;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-text {
+            color: $color-text;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+    }
+
+}
+
+.section-heading {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.game {
+
+    position: relative;
+    overflow: hidden;
+    background: rgb(32, 32, 39) url(img/game/game-stars.svg) no-repeat;
+    background-position-x: calc(0% + 1250px);
+    background-position-y: calc(0% + 93px);
+    
+    &-heading {
+        padding-top: 46px;
+        padding-bottom: 72px;
+        
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 144px;
+    }
+
+    &__item {
+        width: 1200px;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        display: flex;
+
+        &_reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        &-info {
+            padding: 48px;
+            width: 504px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &-heading {
+            color: $color-text;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 48px;
+        }
+
+        &-text {
+            color: $color-text;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 24px;
+            padding-bottom: 36px;
+            width: 457px;
+        }
+        &-btn {
+            width: 247px;
+            height: 66px;
+            padding: 16px 28px 16px 28px;
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+
+
+    }
+}
+
+.footer {
+    height: 150px;
+    background: rgb(189, 237, 53);
+
+    &-text {
+        padding-top: 60px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
+@import 'mobile'
+
+
+
