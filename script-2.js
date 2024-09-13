@@ -1,6 +1,6 @@
 let password = 'пароль';
 let answer = prompt("Введите пароль");
-if (answer === 'Skypro') {
+if (answer === password) {
     console.log('Пароль введен верно');
 } else {
     console.log('Пароль введен неправильно');
@@ -29,18 +29,42 @@ alert(+a + +b);
 let month = prompt("Впишите номер месяца");
 let monthNumber = 12;
 switch (month) {
-    case '12' || '1' || '2': 
+    case '12':
         console.log('Зима');
         break;
-    case '3' || '4' || '5': 
-        console.log('Весна');
+    case '1':
+        console.log('Зима');
         break;
-    case '6' || '7' || '8': 
-        console.log('Лето');
+    case '2':
+        console.log('Зима');
         break;
-    case '9' || '10' || '11': 
-        console.log('Осень');
-        break;
+        case '3':
+            console.log('Весна');
+            break;
+        case '4':
+            console.log('Весна');
+            break;
+        case '5':
+            console.log('Весна');
+            break;
+            case '6':
+                console.log('Лето');
+                break;
+            case '7':
+                console.log('Лето');
+                break;
+            case '8':
+                console.log('Лето');
+                break;
+                case '9':
+                    console.log('Осень');
+                    break;
+                case '10':
+                    console.log('Осень');
+                    break;
+                case '11':
+                    console.log('Осень');
+                    break;
     default:
         console.log('неправильный ввод');
 }
