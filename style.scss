@@ -18,6 +18,11 @@ a {
     padding-right: calc(50% - 600px);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
 .top {
     position: relative;
     overflow: hidden;

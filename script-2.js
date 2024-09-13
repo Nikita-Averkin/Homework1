@@ -68,3 +68,4 @@ switch (month) {
     default:
         console.log('неправильный ввод');
 }
+
