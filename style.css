@@ -223,6 +223,9 @@ html {
   display: flex;
   flex-direction: row-reverse;
 }
+.game__item_img {
+  max-width: 600px;
+}
 .game__item-info {
   padding: 48px;
   width: 504px;
@@ -351,5 +354,70 @@ html {
   }
   .about {
     display: none;
+  }
+  .game-heading {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+  }
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 49px;
+  }
+  .game__item {
+    width: 343px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .game__item_img {
+    max-width: 343px;
+  }
+  .game__item_img-cover {
+    width: 100%;
+  }
+  .game__item-info {
+    width: 284.93px;
+    padding-top: 30px;
+  }
+  .game__item-heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    padding-top: 30px;
+  }
+  .game__item-text {
+    width: 249px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .game__item-btn {
+    width: 285px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer-text {
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

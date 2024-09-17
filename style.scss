@@ -247,6 +247,10 @@ html {
             flex-direction: row-reverse;
         }
 
+        &_img {
+            max-width: 600px;
+        }
+
         &-info {
             padding: 48px;
             width: 504px;

@@ -15,7 +15,7 @@ if (c > 0 && c < 10) {
 }
 
 let d = 7;
-let e = 1 
+let e = 1
 if (d > 100 || e > 100) {
     console.log('Верно');
 } else {
@@ -38,33 +38,33 @@ switch (month) {
     case '2':
         console.log('Зима');
         break;
-        case '3':
-            console.log('Весна');
-            break;
-        case '4':
-            console.log('Весна');
-            break;
-        case '5':
-            console.log('Весна');
-            break;
-            case '6':
-                console.log('Лето');
-                break;
-            case '7':
-                console.log('Лето');
-                break;
-            case '8':
-                console.log('Лето');
-                break;
-                case '9':
-                    console.log('Осень');
-                    break;
-                case '10':
-                    console.log('Осень');
-                    break;
-                case '11':
-                    console.log('Осень');
-                    break;
+    case '3':
+        console.log('Весна');
+        break;
+    case '4':
+        console.log('Весна');
+        break;
+    case '5':
+        console.log('Весна');
+        break;
+    case '6':
+        console.log('Лето');
+        break;
+    case '7':
+        console.log('Лето');
+        break;
+    case '8':
+        console.log('Лето');
+        break;
+    case '9':
+        console.log('Осень');
+        break;
+    case '10':
+        console.log('Осень');
+        break;
+    case '11':
+        console.log('Осень');
+        break;
     default:
         console.log('неправильный ввод');
 }
