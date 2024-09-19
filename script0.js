@@ -31,4 +31,8 @@ while (n > 50) {
  console.log ("num:" + n + "Iterators:" +f);
 }
 
-
+let dayFriday = 6;
+let allDay = 31;
+for (let i = dayFriday; i < allDay; i +=7) {
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
+}
