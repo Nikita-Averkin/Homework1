@@ -267,6 +267,9 @@ html {
   letter-spacing: 0%;
   text-align: center;
 }
+.game__item-btn:hover {
+  cursor: pointer;
+}
 
 .footer {
   height: 150px;
