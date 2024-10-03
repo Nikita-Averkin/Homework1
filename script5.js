@@ -91,19 +91,27 @@
 
 // Задание по вёрстке
 
-function guessNumber() {
-    let number = +prompt('Угадай число');
-    if (number < 0) {
-        alert('Это совсем не то');
-    } else if (number === 30) {
-        alert('Ура, ты угадал');
-    } else if (number >= 0 && number <= 29) {
-        alert('Холодно, бери больше');
-    } 
-    else if (number >= 31 && number <= 100) {
-        alert('Холодно, должно быть меньше');
-    } else {
-        alert('Вы ввели неправильное значение');
-    }
+ function guessNumber() {
+    let number = Math.floor(Math.random() * 10 + 1);
+    let userNumber = +prompt('Угадай число');
+        if (number === userNumber) {
+            alert('Ура, ты угадал');
+        } else if (userNumber > 100) {
+            alert('Вводимое число должно быть меньше 100');
+            guessNumber();
+        }
+        else if (userNumber < numder) {
+            alert('Холодно, должно быть больше');
+            guessNumber();
+        } else {
+            alert('Вы ввели неправильное значение');
+            guessNumber();
+        }
+    
 }
-number();
+window.addEventListener("DOMContentLoaded",function() {
+        document.getElementById("game__item-btn").addEventListener("click",guessNumber);
+});
+console.log(guessNumber());
+
+
