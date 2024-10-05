@@ -90,28 +90,22 @@
 // console.log(circle2.methodgetArea());
 
 // Задание по вёрстке
-
- function guessNumber() {
-    let number = Math.floor(Math.random() * 10 + 1);
-    let userNumber = +prompt('Угадай число');
-        if (number === userNumber) {
-            alert('Ура, ты угадал');
-        } else if (userNumber > 100) {
-            alert('Вводимое число должно быть меньше 100');
-            guessNumber();
-        }
-        else if (userNumber < numder) {
-            alert('Холодно, должно быть больше');
-            guessNumber();
-        } else {
-            alert('Вы ввели неправильное значение');
-            guessNumber();
-        }
-    
-}
 window.addEventListener("DOMContentLoaded",function() {
-        document.getElementById("game__item-btn").addEventListener("click",guessNumber);
+    document.getElementById("game__item-btn").addEventListener("click",guessNumber);
 });
-console.log(guessNumber());
-
-
+ function guessNumber() {
+    var number = Math.floor(Math.random() * 101),
+        guess,
+        text = 'Угадай число:';
+        do {
+            guess = +prompt(text);
+            if (number < guess) {
+              text = "Это слишком высоко!";
+            } else if (number > guess) {
+              text = "Это слишком низко!";
+            } else {
+              text = "Вы ввели неправильное значение";
+            }
+          } while (guess != number);
+          alert('Хорошая работа!');
+}
