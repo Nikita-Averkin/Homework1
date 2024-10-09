@@ -91,10 +91,10 @@
 
 // Задание по вёрстке
 window.addEventListener("DOMContentLoaded",function() {
-    document.getElementById("game__item-btn").addEventListener("click",guessNumber);
+    document.getElementById("game__item-btn1").addEventListener("click",guessNumber);
 });
  function guessNumber() {
-    var number = Math.floor(Math.random() * 101),
+    let number = Math.floor(Math.random() * 101),
         guess,
         text = 'Угадай число:';
         do {
