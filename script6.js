@@ -1,41 +1,43 @@
 // Задание по вёрстке
 
 window.addEventListener("DOMContentLoaded",function() {
-    document.getElementById("game__item-btn2").addEventListener("click", rand);
+    document.getElementById("game__item-btn2").addEventListener("click", arifmetic);
 });
 
-let a = +prompt('Сколько примеров вы хотите решить?');
-function rand(max){
-    return Math.floor(Math.random() * Math.floor(max));
-    
-}
+let num1 = Math.floor(Math.random() * 10);
+let num2 = Math.floor(Math.random() * 10);
 
-let max = 20;
-let b = rand(max);
-let c = rand(max);
- 
-for (i = 0; i < a; i++) {
-    if (b < 5 && c < 3) {
-        let sum = b + c;
-        let d = +prompt("Дайте правильный ответ:" + b + "+" + c + "=");
-    } else if (b >= 5 && b < 10 && c >= 3 && c < 6) {
-        let sum = b - c;
-        let d = +prompt("Дайте правильный ответ:" + b + "-" + c + "=");
-    } else if (b >= 10 && b < 15 && c >= 6 && c < 10) {
-        let sum = b * c;
-        let d = +prompt("Дайте правильный ответ:" + b + "*" + c + "=");
-    } else if (b >= 15 && b < 20 && c >= 2 && c < 5) {
-        let sum = b / c;
-        let d = +prompt("Дайте правильный ответ:" + b + "/" + c + "=");
-    }
- 
-    if (sum === d){
-        console.log("Ваш ответ верный - " + sum);
+    let amount = num1 + num2;
+    let difference = num1 - num2;
+    let multiply = num1 * num2;
+    let division = num1 / num2;
+
+function arifmetic() {
+    let a = +prompt('Решите задачку:' + num1, '+', num2);
+    if (amount == a) {
+        alert('Верно!')
     } else {
-        console.log("Ваш ответ не верный - " + d + "!" + " Верный ответ - " + sum + "!");
+        alert('Ответ не верен, правильный ответ: ' + amount);
+    }
+    let b = +prompt('Решите задачку:' + num1, '-', num2);
+    if (difference == b) {
+        alert('Верно!')
+    } else {
+        alert('Ответ не верен, правильный ответ: ' + difference);
+    }
+    let c = +prompt('Решите задачку:' + num1, '*', num2);
+    if (multiply == c) {
+        alert('Верно!')
+    } else {
+        alert('Ответ не верен, правильный ответ: ' + multiply);
+    }
+    let d = +prompt('Решите задачку:' + num1, '/', num2);
+    if (division == d) {
+        alert('Верно!')
+    } else {
+        alert('Ответ не верен, правильный ответ: ' + division);
     }
 }
-
   
 
 // Задание 1
