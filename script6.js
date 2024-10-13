@@ -1,13 +1,42 @@
 // Задание по вёрстке
 
 window.addEventListener("DOMContentLoaded",function() {
-    document.getElementById("game__item-btn2").addEventListener("click",guessNumber);
+    document.getElementById("game__item-btn2").addEventListener("click", rand);
 });
 
-function arithmetic() {
+let a = +prompt('Сколько примеров вы хотите решить?');
+function rand(max){
+    return Math.floor(Math.random() * Math.floor(max));
+    
+}
 
-} 
+let max = 20;
+let b = rand(max);
+let c = rand(max);
+ 
+for (i = 0; i < a; i++) {
+    if (b < 5 && c < 3) {
+        let sum = b + c;
+        let d = +prompt("Дайте правильный ответ:" + b + "+" + c + "=");
+    } else if (b >= 5 && b < 10 && c >= 3 && c < 6) {
+        let sum = b - c;
+        let d = +prompt("Дайте правильный ответ:" + b + "-" + c + "=");
+    } else if (b >= 10 && b < 15 && c >= 6 && c < 10) {
+        let sum = b * c;
+        let d = +prompt("Дайте правильный ответ:" + b + "*" + c + "=");
+    } else if (b >= 15 && b < 20 && c >= 2 && c < 5) {
+        let sum = b / c;
+        let d = +prompt("Дайте правильный ответ:" + b + "/" + c + "=");
+    }
+ 
+    if (sum === d){
+        console.log("Ваш ответ верный - " + sum);
+    } else {
+        console.log("Ваш ответ не верный - " + d + "!" + " Верный ответ - " + sum + "!");
+    }
+}
 
+  
 
 // Задание 1
 
@@ -120,4 +149,39 @@ function arithmetic() {
 //     array.filter(item < 0 => item);
 // }
 // console.log(negativeNumber([1, 2, 3, -4, 5, -6, 7, 8, 9, 10]));
+
+// Задание 14
+// 
+// function randomNumb() {
+//     return Math.floor(Math.random() * 10);
+//     
+// }
+// const arr = [];
+// 
+// for (let i = 0; i < 10; i++) {
+//         arr.push(randomNumb());
+// }
+// console.log(arr);
+// 
+// const evenArr = [];
+// for (let i = 0; i < array.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         evenArr.push(arr[i]);
+//     }
+// }
+// console.log(evenArr);
+
+// Задание 15
+
+// function randomNumb() {
+//     return Math.floor(Math.random() * 10);
+//     
+// }
+// const arr = [];
+// 
+// for (let i = 0; i < 10; i++) {
+//         arr.push(randomNumb());
+// }
+// console.log(arr);
+// console.log(arr.reduce((a, b) => a + b) / arr.length);
 
