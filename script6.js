@@ -1,43 +1,45 @@
 // Задание по вёрстке
 
 window.addEventListener("DOMContentLoaded",function() {
-    document.getElementById("game__item-btn2").addEventListener("click", arifmetic);
+    document.getElementById("game__item-btn2").addEventListener("click", simpleMath);
 });
+
+function simpleMath() {
 
 let num1 = Math.floor(Math.random() * 10);
 let num2 = Math.floor(Math.random() * 10);
 
-    let amount = num1 + num2;
-    let difference = num1 - num2;
-    let multiply = num1 * num2;
-    let division = num1 / num2;
+const sings = ['+', '-', '*', '/'];
+const randomIndex = Math.floor(Math.random() * (sings.length));
+let randomSings = sings[randomIndex];
+ function getRes() {
 
-function arifmetic() {
-    let a = +prompt('Решите задачку:' + num1, '+', num2);
-    if (amount == a) {
-        alert('Верно!')
-    } else {
-        alert('Ответ не верен, правильный ответ: ' + amount);
+     if (randomSings === '+') {
+        return num1 + num2;
+
     }
-    let b = +prompt('Решите задачку:' + num1, '-', num2);
-    if (difference == b) {
-        alert('Верно!')
-    } else {
-        alert('Ответ не верен, правильный ответ: ' + difference);
+    if (randomSings === '-') {
+         return num1 - num2;
     }
-    let c = +prompt('Решите задачку:' + num1, '*', num2);
-    if (multiply == c) {
-        alert('Верно!')
-    } else {
-        alert('Ответ не верен, правильный ответ: ' + multiply);
+    if (randomSings === '*') {
+        return num1 * num2;
     }
-    let d = +prompt('Решите задачку:' + num1, '/', num2);
-    if (division == d) {
-        alert('Верно!')
-    } else {
-        alert('Ответ не верен, правильный ответ: ' + division);
+    if (randomSings === '/') {
+        return num1 / num2;
     }
+ }
+let result = getRes();
+
+let userAnswer = Number(prompt(`Решите задачку:` + num1 + randomSings + num2));
+if (userAnswer === result) {
+    alert(`Ты молодец!`);
 }
+else {
+    alert(`Это неправильный ответ!`)
+}
+
+}
+
   
 
 // Задание 1
