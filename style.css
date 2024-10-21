@@ -226,6 +226,9 @@ html {
 .game__item_img {
   max-width: 600px;
 }
+.game__item_img-cover {
+  height: 100%;
+}
 .game__item-info {
   padding: 48px;
   width: 504px;

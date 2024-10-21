@@ -249,6 +249,9 @@ html {
 
         &_img {
             max-width: 600px;
+            &-cover {
+                height: 100%;
+            }
         }
 
         &-info {
