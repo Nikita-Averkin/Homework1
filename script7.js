@@ -1,3 +1,18 @@
+//Задание по верстке
+
+//Задание "Переверни текст"
+window.addEventListener("DOMContentLoaded",function() {
+    document.getElementById("game__item-btn3").addEventListener("click", turnWorld);
+});
+
+function turnWorld() {
+    let word = [];
+    word = prompt("Введите слово ","");
+    alert(word.split('').reverse().join(''))
+}
+
+
+
 // Задание 1
 let str = 'js';
 str = str.toUpperCase();
@@ -70,4 +85,3 @@ function formatDate(date) {
     Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}.
     Время : ${hours}:${minutes}:${seconds}`;
 }
-console.log(formatDate(new Date()));
