@@ -111,11 +111,13 @@ function formatDate(date) {
     
     const year = date.getFullYear();
     const day = date.getDate();
-    const month = date.getMonths();
+    const month = date.getMonth();
     const dayOfWeek = days[date.getDate()];
     const hours = date.getHours();
     const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
     return `
     Дата : ${day} ${months[month]} ${year} - это ${dayOfWeek}.
     Время : ${hours}:${minutes}:${seconds}`;
 }
+console.log(formatDate(new Date()));
