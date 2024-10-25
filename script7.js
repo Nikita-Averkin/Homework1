@@ -112,7 +112,7 @@ function formatDate(date) {
     const year = date.getFullYear();
     const day = date.getDate();
     const month = date.getMonth();
-    const dayOfWeek = days[date.getDate()];
+    const dayOfWeek = days[date.getDay()];
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
