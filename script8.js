@@ -1,4 +1,33 @@
 // Задание по вёрстке
+window.addEventListener("DOMContentLoaded",function() {
+    document.getElementById("game__item-btn5").addEventListener("click", game5);
+});
+
+function computerPlay() {
+    const options = ["Камень", "Ножницы", "Бумага"];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return options[randomIndex];
+
+}
+
+function game5 () {
+    const user = prompt("Камень , Ножницы, Бумага?");
+    const computer = computerPlay();
+    alert(`Ответ компьютера: ${computer}`);
+    const winner = {
+        Камень: "Ножницы",
+        Бумага: "Камень",
+        Ножницы: "Бумага",
+    }
+
+    if (user === computer) {
+        alert ("Ничья!");
+    } else if (winner[user] === computer) {
+        alert ("Вы победили");
+    } else {
+        alert ("Вы проиграли!");
+    }
+}
 
 
 // Задание 1
